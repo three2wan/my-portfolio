@@ -1,4 +1,5 @@
 import "../App.css";
+import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import Profile from "../components/Profile";
 
@@ -11,6 +12,7 @@ function App() {
           <div className="flex flex-col">
             <div className="flex flex-col">
               <Profile />
+              <Footer />
             </div>
           </div>
         </div>
