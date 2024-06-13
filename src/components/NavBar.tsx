@@ -3,7 +3,7 @@ function NavBar() {
     <header className="p-2 w-full">
       <div className="mx-auto max-w-xl">
         <nav className="backdrop-filter backdrop-blur-lg bg-white bg-opacity-40 rounded-xl flex items-center justify-between shadow-md">
-          <div className="flex gap-x-3">
+          <div className="flex gap-x-3 px-5 py-2">
             <div>
               <svg
                 fill="none"

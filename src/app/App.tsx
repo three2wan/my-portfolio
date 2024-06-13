@@ -1,7 +1,7 @@
+import { Outlet } from "react-router-dom";
 import "../App.css";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import Profile from "../components/Profile";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <div className="mx-auto max-w-xl bg-white rounded-xl shadow-lg">
           <div className="flex flex-col">
             <div className="flex flex-col">
-              <Profile />
+              <Outlet />
               <Footer />
             </div>
           </div>
