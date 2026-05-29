@@ -1,10 +1,16 @@
+import { Link } from "react-router-dom";
+
 function NavBar() {
   return (
     <header className="p-2 w-full">
       <div className="mx-auto max-w-xl">
         <nav className="backdrop-filter backdrop-blur-lg bg-white bg-opacity-40 rounded-xl flex items-center justify-between shadow-md">
-          <div className="flex gap-x-3 px-5 py-2">
-            <div>
+          <div className="flex gap-x-1 px-5 py-2">
+            <Link
+              to="/"
+              aria-label="Home"
+              className="flex flex-col items-center px-2 py-1 rounded-lg hover:bg-white hover:bg-opacity-60 transition-all"
+            >
               <svg
                 fill="none"
                 strokeWidth={1.5}
@@ -12,7 +18,7 @@ function NavBar() {
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
-                className="w-7 h-7"
+                className="w-6 h-6"
               >
                 <path
                   strokeLinecap="round"
@@ -20,10 +26,14 @@ function NavBar() {
                   d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
                 />
               </svg>
-              <div>Home</div>
-            </div>
+              <span className="text-xs font-medium">Home</span>
+            </Link>
 
-            <div>
+            <Link
+              to="/skills"
+              aria-label="Skills"
+              className="flex flex-col items-center px-2 py-1 rounded-lg hover:bg-white hover:bg-opacity-60 transition-all"
+            >
               <svg
                 fill="none"
                 strokeWidth={1.5}
@@ -31,7 +41,7 @@ function NavBar() {
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
-                className="w-7 h-7"
+                className="w-6 h-6"
               >
                 <path
                   strokeLinecap="round"
@@ -39,10 +49,14 @@ function NavBar() {
                   d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
                 />
               </svg>
-              <div>Skills</div>
-            </div>
+              <span className="text-xs font-medium">Skills</span>
+            </Link>
 
-            <div>
+            <Link
+              to="/projects"
+              aria-label="Projects"
+              className="flex flex-col items-center px-2 py-1 rounded-lg hover:bg-white hover:bg-opacity-60 transition-all"
+            >
               <svg
                 fill="none"
                 strokeWidth={1.5}
@@ -50,7 +64,7 @@ function NavBar() {
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
-                className="w-7 h-7"
+                className="w-6 h-6"
               >
                 <path
                   strokeLinecap="round"
@@ -58,15 +72,38 @@ function NavBar() {
                   d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"
                 />
               </svg>
-              <div>Projects</div>
-            </div>
+              <span className="text-xs font-medium">Projects</span>
+            </Link>
+
+            <Link
+              to="/experiences"
+              aria-label="Experience"
+              className="flex flex-col items-center px-2 py-1 rounded-lg hover:bg-white hover:bg-opacity-60 transition-all"
+            >
+              <svg
+                fill="none"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z"
+                />
+              </svg>
+              <span className="text-xs font-medium">Experience</span>
+            </Link>
           </div>
 
           <div className="justify-center">
-            <a href="#">
+            <a href="mailto:#">
               <button
                 type="button"
-                className="gap-x-1 before:ease relative overflow-hidden border border-[#000000] bg-[#050708] text-white shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-40 font-medium rounded-lg text-sm px-2 py-2 text-center inline-flex items-center mx-7"
+                className="gap-x-1 before:ease relative overflow-hidden border border-[#000000] bg-[#050708] text-white shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-40 font-medium rounded-lg text-sm px-2 py-2 text-center inline-flex items-center mx-4"
               >
                 <svg
                   fill="none"
@@ -83,7 +120,7 @@ function NavBar() {
                     d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
                   />
                 </svg>
-                <span className="hidden md:block">Hire Me</span>
+                <span className="hidden md:block ml-1">Hire Me</span>
               </button>
             </a>
           </div>
