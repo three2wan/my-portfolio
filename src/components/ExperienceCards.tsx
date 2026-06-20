@@ -33,8 +33,6 @@ export default function ExperienceCards({
       </p>
 
       <div className="relative mt-4 space-y-4">
-        <div className="absolute left-[7px] top-2 bottom-2 w-px bg-zinc-600/60" />
-
         {jobs.map((job, i) => {
           const visible = i < visibleCount;
           return (
@@ -46,6 +44,9 @@ export default function ExperienceCards({
                 transform: visible ? "translateY(0)" : "translateY(10px)",
               }}
             >
+              {i < jobs.length - 1 && (
+                <div className="absolute left-[7px] top-[25px] bottom-[-41px] w-px bg-zinc-600/60" />
+              )}
               <div className="absolute left-0 top-[18px] h-3.5 w-3.5 rounded-full bg-indigo-500 ring-2 ring-zinc-800" />
 
               <div className="rounded-xl bg-zinc-700/50 px-4 py-3 ring-1 ring-zinc-600/40">
