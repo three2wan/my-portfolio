@@ -24,7 +24,7 @@ export default function ExperienceCards({
 
   useEffect(() => {
     onUpdate?.();
-  }, [introDisplayed, visibleCount, onUpdate]);
+  }, [introDisplayed, onUpdate]);
 
   return (
     <div>
@@ -32,7 +32,7 @@ export default function ExperienceCards({
         {introDisplayed}
       </p>
 
-      <div className="relative mt-4 space-y-4">
+      <div className="relative mt-4 space-y-4 max-h-[420px] overflow-y-auto pr-1 [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-zinc-600 [&::-webkit-scrollbar-track]:bg-transparent">
         {jobs.map((job, i) => {
           const visible = i < visibleCount;
           return (
