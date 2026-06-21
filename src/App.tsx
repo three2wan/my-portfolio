@@ -53,7 +53,7 @@ function App() {
             </svg>
           </button>
           <span className="text-sm font-medium text-zinc-200">
-            AI Portfolio
+            Syazwan's Portfolio
           </span>
         </header>
 
