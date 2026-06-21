@@ -84,7 +84,7 @@ function buildContact(): string {
     `- [${PROFILE_DATA.email}](mailto:${PROFILE_DATA.email})`,
     `- [${linkedinLabel}](${PROFILE_DATA.linkedin})`,
     `- [${githubLabel}](${PROFILE_DATA.github})`,
-    "- [Download my resume](/Syazwan_Resume.pdf)",
+    "- [Download my resume](./Syazwan_Resume.pdf)",
   ].join("\n");
 }
 
@@ -92,7 +92,7 @@ function buildResume(): string {
   return [
     "**Resume**",
     "",
-    "You can grab my full CV here: [Download Resume (PDF)](/Syazwan_Resume.pdf)",
+    "You can grab my full CV here: [Download Resume (PDF)](./Syazwan_Resume.pdf)",
     "",
     "It covers my experience, skills and education in more detail.",
   ].join("\n");
