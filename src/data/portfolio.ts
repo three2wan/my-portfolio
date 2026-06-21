@@ -94,7 +94,7 @@ export const EXPERIENCE_DATA: Experience[] = [
     company: "Dapat Vista(M) Sdn Bhd",
     period: "Jan 2023 - Present",
     highlights: [
-      "Leading the development of centralized bail information system and payout payment platforms, overseeing code quality, architecture, and delivery planning",
+      "Leading the development of centralized bail payment system and multi-channel communication platform, overseeing code quality, architecture, and delivery planning",
       "Managing a cross-functional team of 4 developers, with a focus on mentorship, performance growth and knowledge sharing",
       "Collaborating with stakeholders to translate business needs into scalable, maintainable technical solutions",
     ],
@@ -104,10 +104,9 @@ export const EXPERIENCE_DATA: Experience[] = [
     company: "Dapat Vista(M) Sdn Bhd",
     period: "Mar 2020 - Jan 2023",
     highlights: [
-      "Developed a messaging platform using .NET and React to efficiently process thousands of SMS broadcasting requests and provide on-demand information services",
-      "Developed a user-friendly interface for an online bail payment application using Laravel, TypeScript with React, and Tailwind, successfully raising daily bail collections to RM 1 million",
-      "Integrated payment gateway with bank partners through APIs and host-to-host (H2H) technologies within a strict 1-hour SLA",
-      "Collaborated with stakeholders to drive the implementation of 10 major features",
+      "Developed a multi-channel communication platform using Node.js and React to efficiently process thousands of SMS broadcasting requests daily via portal and API",
+      "Developed a user-friendly interface for an online bail payment application using Laravel, TypeScript with React and Tailwind CSS",
+      "Integrated payment gateway with bank partners through APIs and host-to-host (H2H) technologies",
     ],
   },
   {
@@ -115,7 +114,7 @@ export const EXPERIENCE_DATA: Experience[] = [
     company: "Twistcode Technologies Sdn Bhd",
     period: "Nov 2017 - Mar 2020",
     highlights: [
-      "Built a training simulation system on Microsoft HoloLens using Unity3D to predict and respond to potential damage conditions in industrial equipment",
+      "Built a training simulation system on Microsoft HoloLens using Unity game engine to predict and respond to potential damage conditions in industrial equipment",
       "Designed and developed a backend API using .NET and MSSQL Server, ensuring high code quality through rigorous testing and best practices",
     ],
   },
@@ -136,27 +135,23 @@ export const PROJECTS_DATA: Project[] = [
     description:
       "A user-friendly platform for processing court bail payments online, built end to end with a Laravel backend and a TypeScript + React frontend.",
     tech: ["Laravel", "React", "TypeScript", "Tailwind", "MySQL"],
-    highlight: "Raised daily bail collections to RM 1 million.",
   },
   {
-    name: "SMS Messaging & Broadcast Platform",
+    name: "Multi Channel Communication Messaging & Broadcast Platform",
     description:
-      "A messaging platform that processes thousands of SMS broadcasting requests and powers on-demand information services for users.",
-    tech: [".NET / C#", "React", "RabbitMQ", "SQL Server"],
-    highlight: "Handles thousands of broadcast requests reliably.",
+      "A multi channel communication messaging platform that processes thousands of broadcasting requests and powers on-demand information services for users.",
+    tech: ["React", "Node.js", "RabbitMQ", "MySQL"],
   },
   {
     name: "Bank Payment Gateway Integration",
     description:
       "Integrations with bank partners through public APIs and host-to-host (H2H) technologies to settle payments under a strict service window.",
-    tech: ["REST APIs", "Host-to-Host", ".NET", "Laravel"],
-    highlight: "Met a strict 1-hour settlement SLA.",
-  },
-  {
-    name: "HoloLens Training Simulation",
-    description:
-      "An augmented-reality training simulation on Microsoft HoloLens that predicts and responds to potential damage conditions in industrial equipment.",
-    tech: ["Unity3D", "C#", "HoloLens", "Mixed Reality"],
-    highlight: "Hands-free AR training for industrial safety.",
+    tech: [
+      "REST APIs",
+      "Host-to-Host",
+      "Laravel",
+      "Encryption",
+      "Authentication",
+    ],
   },
 ];

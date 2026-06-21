@@ -31,19 +31,15 @@ function buildAbout(): string {
     "",
     "A few quick facts:",
     "",
-    `- 🧑‍💻 Currently a **${EXPERIENCE_DATA[0].role}** at ${EXPERIENCE_DATA[0].company}`,
-    "- 👥 Leading and mentoring a team of 4 developers",
-    "- 🌏 Based in Malaysia",
-    `- ${PROFILE_DATA.availableForWork ? "✅ Open to new opportunities" : "🔒 Not currently looking"}`,
+    `- Currently a **${EXPERIENCE_DATA[0].role}** at ${EXPERIENCE_DATA[0].company}`,
+    "- Leading and mentoring a team of 4 developers",
+    "- Based in Malaysia",
+    `- ${PROFILE_DATA.availableForWork ? "Open to new opportunities" : "Not currently looking"}`,
   ].join("\n");
 }
 
 function buildSkills(): string {
-  const lines = [
-    "**Skills & Tech Stack**",
-    "",
-    "I work across the full stack — here's a breakdown:",
-  ];
+  const lines = ["I work across the full-stack. Here's a breakdown:"];
   for (const category of SKILLS_DATA) {
     lines.push("", `**${category.title}**`, category.skills.join(" · "));
   }
@@ -51,7 +47,7 @@ function buildSkills(): string {
 }
 
 function buildProjects(): string {
-  const lines = ["**Projects**", "", "Here are a few things I've built:"];
+  const lines = ["Here are a few things I've built:"];
   for (const project of PROJECTS_DATA) {
     lines.push(
       "",
@@ -85,10 +81,10 @@ function buildContact(): string {
     "",
     `I'm currently **${PROFILE_DATA.availableForWork ? "available for work" : "not actively looking"}** and happy to connect.`,
     "",
-    `- 📧 Email: [${PROFILE_DATA.email}](mailto:${PROFILE_DATA.email})`,
-    `- 💼 LinkedIn: [${linkedinLabel}](${PROFILE_DATA.linkedin})`,
-    `- 💻 GitHub: [${githubLabel}](${PROFILE_DATA.github})`,
-    "- 📄 Resume: [Download PDF](/Syazwan_Resume.pdf)",
+    `- [${PROFILE_DATA.email}](mailto:${PROFILE_DATA.email})`,
+    `- [${linkedinLabel}](${PROFILE_DATA.linkedin})`,
+    `- [${githubLabel}](${PROFILE_DATA.github})`,
+    "- [Download my resume](/Syazwan_Resume.pdf)",
   ].join("\n");
 }
 
@@ -98,15 +94,15 @@ function buildResume(): string {
     "",
     "You can grab my full CV here: [Download Resume (PDF)](/Syazwan_Resume.pdf)",
     "",
-    "It covers my experience, skills, and education in more detail.",
+    "It covers my experience, skills and education in more detail.",
   ].join("\n");
 }
 
 function buildGreeting(): string {
   return [
-    "Hey there! 👋 Great to meet you.",
+    "Hi!",
     "",
-    "Ask me about my **skills**, **projects**, **experience**, or how to **get in touch** — or pick one of the suggestions below.",
+    "Ask me about my **skills**, **projects**, **experience**, or how to **get in touch** or pick one of the suggestions below.",
   ].join("\n");
 }
 
@@ -231,10 +227,13 @@ export const RESPONSES: IntentResponse[] = [
       "hey",
       "yo",
       "sup",
+      "wassap",
       "greetings",
       "howdy",
       "good morning",
       "good evening",
+      "salam",
+      "selamat pagi",
     ],
     getResponse: buildGreeting,
     followUps: [
