@@ -7,7 +7,7 @@ import {
 } from "./portfolio";
 
 export const FALLBACK_TEXT =
-  "I'm not sure about that — try asking about my skills, projects, or experience!";
+  "I'm not sure about that. Try asking about my skills, projects, or experience!";
 
 export const WELCOME_MESSAGE = [
   "Salam sejahtera! Welcome to my portfolio.",

@@ -97,7 +97,7 @@ function parseInline(text: string, keyPrefix: string): ReactNode[] {
       );
     } else {
       const href = match[4];
-      const external = /^https?:/i.test(href);
+      const external = /^https?:/i.test(href) || href.endsWith(".pdf");
       nodes.push(
         <a
           key={key}
